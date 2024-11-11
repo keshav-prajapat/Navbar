@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Sweet Adventure In-Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS:wght@400;700&display=swap');
+        
+        .font-custom {
+            font-family: 'Comic Sans MS', sans-serif;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-blue-700 text-white font-custom">
+
+    <!-- Title and Description -->
+    <div class="text-center py-10">
+        <h1 class="text-4xl font-bold">A Sweet Adventure In-Game</h1>
+        <p class="max-w-lg mx-auto mt-4 text-base">
+            Jump, run, and skip your direction through testing levels set in shocking frigid scenes. Intended for youngsters and youthful adolescents, this tomfoolery, quick moving game allows you to resist gravity and hold back nothing of the month to match competitor list! Now is the ideal time to flaunt your abilities, open great skins, and challenge companions on your journey to turn into a definitive Bouncing Ball champion!
+        </p>
+    </div>
+
+    <!-- Main Sections: Missions, Shop, Ranking -->
+    <div class="flex flex-col md:flex-row items-center justify-center gap-8 px-4 py-8">
+
+        <!-- Missions Section with Image -->
+        <div class="relative w-full md:w-1/3 hover-scale shadow-lg">
+            <img src="img/Rectangle 4.png" alt="Missions" class="w-full h-full rounded-xl object-cover">
+            <div class="absolute bottom-0 w-full bg-blue-900 bg-opacity-70 text-center py-4 rounded-b-xl">
+                <h2 class="text-2xl font-bold">Challenge Your Skills</h2>
+            </div>
+        </div>
+
+        <!-- Shop Section with Image -->
+        <div class="relative w-full md:w-1/3 hover-scale shadow-lg">
+            <img src="img/Rectangle 5.png" alt="Shop" class="w-full h-full rounded-xl object-cover">
+            <div class="absolute bottom-0 w-full bg-blue-900 bg-opacity-70 text-center py-4 rounded-b-xl">
+                <h2 class="text-2xl font-bold">Unlock Beautiful Skins</h2>
+            </div>
+        </div>
+
+        <!-- Ranking Section with Image -->
+        <div class="relative w-full md:w-1/3 hover-scale shadow-lg">
+            <img src="img/Rectangle 6.png" alt="Ranking" class="w-full h-full rounded-xl object-cover">
+            <div class="absolute bottom-0 w-full bg-blue-900 bg-opacity-70 text-center py-4 rounded-b-xl">
+                <h2 class="text-2xl font-bold">Be The Top Of The Rank</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

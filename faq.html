@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ For Bouncing Ball</title>
+  <style>
+    :root {
+      --dark-blue: #03045e;
+      --medium-blue: #0077b6;
+      --light-blue: #00b4d8;
+      --pale-blue: #90e0ef;
+      --background-light: #f5f5f5;
+      --card-background: #ffffff;
+      --text-color: #333333;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--background-light);
+      color: var(--text-color);
+      padding: 20px;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .faq-section {
+      max-width: 800px;
+      width: 100%;
+      background-color: var(--card-background);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .text1 {
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+      color: var(--medium-blue);
+      margin-bottom: 30px;
+    }
+    .main-faq {
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--light-blue);
+      padding-bottom: 10px;
+    }
+    .text2 {
+      font-size: 20px;
+      font-weight: bold;
+      background-color: var(--pale-blue);
+      color: var(--dark-blue);
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .text2:hover {
+      background-color: var(--light-blue);
+    }
+    .text3 {
+      background-color: #f9f9f9;
+      color: var(--text-color);
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 10px;
+      display: none;
+      line-height: 1.6;
+      font-size: 16px;
+      transition: max-height 0.3s ease;
+    }
+    .icon1 {
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+    .faq.active .icon1 {
+      transform: rotate(180deg);
+    }
+  </style>
+  <script>
+    function toggleAnswer(index) {
+      const faqItem = document.getElementById(`faq${index}`);
+      const answer = document.getElementById(`answer${index}`);
+      const icon = faqItem.querySelector('.icon');
+      answer.style.display = answer.style.display === "none" ? "block" : "none";
+      faqItem.classList.toggle('active');
+    }
+  </script>
+</head>
+<body>
+<div class=" container faq-section">
+  <div class="text1">Frequently Asked Questions - Bouncing Ball 3D</div>
+
+  <div class="main-faq" id="faq1">
+    <div class="text2" onclick="toggleAnswer(1)">
+      <span>What is Bouncing Ball 3D?</span>
+      <span class="icon1">▼</span>
+    </div>
+    <div class="text3" id="answer1">
+      Bouncing Ball 3D is an arcade game where players navigate through challenging levels, jump and bounce through obstacles, and aim for the top of the leaderboard. The game is designed for kids and teens, with a winter-themed environment and various customizations.
+    </div>
+  </div>
+  <div class="main-faq" id="faq2">
+    <div class="text2" onclick="toggleAnswer(2)">
+      <span>What makes Bouncing Ball 3D unique?</span>
+      <span class="icon1">▼</span>
+    </div>
+    <div class="text3" id="answer2">
+      Bouncing Ball 3D offers a combination of challenging levels, daily missions, and customizations like skins and abilities. Players can compete on monthly leaderboards and unlock special abilities, such as score multipliers and speed boosts, for an enhanced gameplay experience.
+    </div>
+  </div>
+  <div class="main-faq" id="faq3">
+    <div class="text2" onclick="toggleAnswer(3)">
+      <span>Is Bouncing Ball 3D safe for children?</span>
+      <span class="icon1">▼</span>
+    </div>
+    <div class="text3" id="answer3">
+      Yes, Bouncing Ball 3D is designed with a safe and fun environment for young players. It combines engaging gameplay with easy-to-learn controls, making it suitable for kids and teens.
+    </div>
+  </div>
+  <div class="main-faq" id="faq4">
+    <div class="text2" onclick="toggleAnswer(4)">
+      <span>What platforms is Bouncing Ball 3D available on?</span>
+      <span class="icon1">▼</span>
+    </div>
+    <div class="text3" id="answer4">
+      Bouncing Ball 3D is available for download on Android devices. Players can enjoy the game for free, start bouncing, complete missions, and rise to the top of the leaderboard.
+    </div>
+  </div>
+  <div class="main-faq" id="faq5">
+    <div class="text2" onclick="toggleAnswer(5)">
+      <span>Can I customize my character in Bouncing Ball 3D?</span>
+      <span class="icon1">▼</span>
+    </div>
+    <div class="text3" id="answer5">
+      Yes, players can choose from a variety of fun skins, trails, and abilities. Customizations not only add a unique look but can also enhance gameplay, helping players stand out and perform better.
+    </div>
+  </div>
+</div>
+</body>
+</html>
